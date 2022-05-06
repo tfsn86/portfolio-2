@@ -1,5 +1,3 @@
-function NotFound() {
-  return <h1>NotFound component</h1>;
-}
-
-export default NotFound;
+export const NotFound = () => {
+  return <div>NotFound component</div>;
+};

@@ -1,5 +1,3 @@
-function About() {
-  return <h1>About component</h1>;
-}
-
-export default About;
+export const About = () => {
+  return <div>About component</div>;
+};

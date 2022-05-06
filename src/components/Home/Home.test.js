@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Home from './Home';
+import { Home } from './Home';
 
 test('home text on screen', () => {
   render(<Home />);

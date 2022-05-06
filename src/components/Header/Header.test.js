@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import { NotFound } from './NotFound';
+import { Header } from './Header';
 
 test('home text on screen', () => {
-  render(<NotFound />);
-  const text = screen.getByText(/NotFound component/i);
+  render(<Header />);
+  const text = screen.getByText(/header component/i);
   expect(text).toBeInTheDocument();
 });
