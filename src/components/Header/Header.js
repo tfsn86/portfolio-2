@@ -1,50 +1,72 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import { FaGithub, FaLinkedin, FaBars } from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
 export const Header = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
+
   return (
     <>
-      <nav className='flex items-center justify-between flex-wrap bg-gray-800 p-6 w-full z-10 top-0'>
-        <div className='flex items-center flex-shrink-0 text-white mr-6'>
-          <span className='text-1xl pl-2'>
-            <NavLink to='/'>
-              Torben Schytt-Nielsen | Business Analysis & Web Development
-            </NavLink>
-          </span>
-        </div>
-        <div className='block lg:hidden'>
-          <button
-            id='nav-toggle'
-            className='flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white'
-          >
-            <svg
-              className='fill-current h-3 w-3'
-              viewBox='0 0 20 20'
-              xmlns='http://www.w3.org/2000/svg'
+      <nav className='flex flex-wrap items-center justify-between py-3 sticky px-8 mb-3 top-3'>
+        <div className='container mx-auto flex flex-wrap items-center justify-between'>
+          <div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
+            <span className='text-1xl leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase'>
+              {/* more work needs to be done to fix font sizing issue  */}
+              <NavLink to='/'>Torben Florup Schytt-Nielsen</NavLink>
+            </span>
+            <button
+              className='text-white cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none'
+              type='button'
+              onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <title>Menu</title>
-              <path d='M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z' />
-            </svg>
-          </button>
-        </div>
+              <i className='fas fa-bars text-black'>
+                <FaBars />
+              </i>
+            </button>
+          </div>
 
-        <div
-          className='w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0'
-          id='nav-content'
-        >
-          <ul className='list-reset lg:flex justify-end flex-1 items-center text-1xl'>
-            <li className='mr-3 text-white'>
-              <NavLink to='/about'>About</NavLink>
-            </li>
-            <li className='mr-3 text-white'>
-              <NavLink to='/projects'>Projects</NavLink>
-            </li>
-            <li className='mr-3 text-white'>
-              <NavLink to='/skills'>Skills</NavLink>
-            </li>
-            <li className='mr-3 text-white'>
-              <NavLink to='/contact'>Contact</NavLink>
-            </li>
-          </ul>
+          <div
+            className={
+              'lg:flex flex-grow items-center' +
+              (navbarOpen ? ' flex' : ' hidden')
+            }
+          >
+            <ul className='flex flex-col lg:flex-row list-none lg:ml-auto justify-end flex-1 items-center text-1xl'>
+              <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
+                <NavLink to='/projects'>Projects</NavLink>
+              </li>
+              <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
+                <NavLink to='/skills'>Skills</NavLink>
+              </li>
+              <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
+                <NavLink to='/about'>About</NavLink>
+              </li>
+              <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
+                <a
+                  href='https://www.linkedin.com/in/torbenschyttnielsen/'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <FaLinkedin />
+                </a>
+              </li>
+              <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
+                <a
+                  href='https://github.com/tfsn86'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <FaGithub />
+                </a>
+              </li>
+              <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
+                <a href='mailto:tfsn86@gmail.com'>
+                  <MdEmail />
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </>

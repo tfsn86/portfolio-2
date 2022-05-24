@@ -1,7 +1,7 @@
 export const Home = () => {
   return (
     <>
-      <h1>Home component</h1>
+      <h1 className='py-96'>Home component</h1>
     </>
   );
 };
