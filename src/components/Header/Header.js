@@ -34,13 +34,40 @@ export const Header = () => {
           >
             <ul className='flex flex-col lg:flex-row list-none lg:ml-auto justify-end flex-1 items-center text-1xl'>
               <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
-                <NavLink to='/projects'>Projects</NavLink>
+                <NavLink
+                  to='/projects'
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'lg:underline lg:underline-offset-8 decoration-1'
+                      : ''
+                  }
+                >
+                  Projects
+                </NavLink>
               </li>
               <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
-                <NavLink to='/skills'>Skills</NavLink>
+                <NavLink
+                  to='/skills'
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'lg:underline lg:underline-offset-8 decoration-1'
+                      : ''
+                  }
+                >
+                  Skills
+                </NavLink>
               </li>
               <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
-                <NavLink to='/about'>About</NavLink>
+                <NavLink
+                  to='/about'
+                  className={({ isActive }) =>
+                    isActive
+                      ? 'lg:underline lg:underline-offset-8 decoration-1'
+                      : ''
+                  }
+                >
+                  About
+                </NavLink>
               </li>
               <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
                 <a
