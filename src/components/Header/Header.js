@@ -12,7 +12,6 @@ export const Header = () => {
         <div className='container mx-auto flex flex-wrap items-center justify-between'>
           <div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
             <span className='text-1xl leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase'>
-              {/* more work needs to be done to fix font sizing issue  */}
               <NavLink to='/'>Torben Florup Schytt-Nielsen</NavLink>
             </span>
             <button

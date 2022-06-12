@@ -2,11 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-nav {
+body {
   font-family: 'Roboto', sans-serif;
+}
+
+nav {
   font-size: 1.2rem;
 }
 
 nav span {
   font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+span {
+  font-size: 1.2rem;
 }
