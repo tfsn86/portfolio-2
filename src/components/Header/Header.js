@@ -57,18 +57,6 @@ export const Header = () => {
                 </NavLink>
               </li>
               <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
-                <NavLink
-                  to='/about'
-                  className={({ isActive }) =>
-                    isActive
-                      ? 'lg:underline lg:underline-offset-8 decoration-1'
-                      : ''
-                  }
-                >
-                  About
-                </NavLink>
-              </li>
-              <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
                 <a
                   href='https://www.linkedin.com/in/torbenschyttnielsen/'
                   target='_blank'

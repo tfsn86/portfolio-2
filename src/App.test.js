@@ -3,6 +3,6 @@ import App from './App';
 
 test('renders home component text', () => {
   render(<App />);
-  const homeCompText = screen.getByText(/hello world/i);
+  const homeCompText = screen.getByText(/business analyst/i);
   expect(homeCompText).toBeInTheDocument();
 });
