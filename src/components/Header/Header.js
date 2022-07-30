@@ -41,7 +41,7 @@ export const Header = () => {
                       : ''
                   }
                 >
-                  Projects
+                  Personal projects
                 </NavLink>
               </li>
               <li className='lg:mx-1 text-black px-2 hover:opacity-50'>
@@ -53,7 +53,7 @@ export const Header = () => {
                       : ''
                   }
                 >
-                  Skills
+                  Programming skills
                 </NavLink>
               </li>
               <li className='lg:mx-1 text-black px-2 hover:opacity-50'>

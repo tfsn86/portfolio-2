@@ -8,8 +8,10 @@ export const Home = () => {
         <div className='md:basis-2/3 md:w-32 md:border-l-2 md:border-dotted md:border-black'>
           <p className='m-6 md:m-20'>
             I am a Business Analyst at the IT and Development Agency of the
-            Danish Ministry of Taxation. Outside work I like to code web
-            applications. Some of them are displayed on this site.
+            Danish Ministry of Taxation. For more information about my
+            professional background please visit my LinkedIn profile. Outside
+            work I like to code web applications and some of them are displayed
+            on this site.
             <br />
             <br />
             Education: Master of Science in Public Administration
@@ -20,7 +22,6 @@ export const Home = () => {
           </p>
         </div>
       </div>
-      <div className='py-40'></div>
     </>
   );
 };
