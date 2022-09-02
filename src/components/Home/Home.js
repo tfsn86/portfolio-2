@@ -12,13 +12,6 @@ export const Home = () => {
             professional background please visit my LinkedIn profile. Outside
             work I like to code web applications and some of them are displayed
             on this site.
-            <br />
-            <br />
-            Education: Master of Science in Public Administration
-            <br />
-            <br />
-            Work Experience: Civil Servant at the Danish Ministry of Culture and
-            Ministry of Social Affairs
           </p>
         </div>
       </div>

@@ -23,7 +23,7 @@ export const Skills = () => {
               <h2 className='text-2xl'>Front End</h2>
             </span>
             <div className='flex flex-row container justify-center md:pt-3 md:pb-10'>
-              <span className='text-8xl px-2'>
+              <span className='text-5xl px-2'>
                 <a
                   href='https://developer.mozilla.org/en-US/docs/Web/HTML'
                   target='_blank'
@@ -32,7 +32,7 @@ export const Skills = () => {
                   <FaHtml5 color='#e34c26' />
                 </a>
               </span>
-              <span className='text-8xl px-2'>
+              <span className='text-5xl px-2'>
                 <a
                   href='https://developer.mozilla.org/en-US/docs/Web/CSS'
                   target='_blank'
@@ -41,7 +41,7 @@ export const Skills = () => {
                   <FaCss3Alt color='#264de4' />
                 </a>
               </span>
-              <span className='text-8xl px-2'>
+              <span className='text-5xl px-2'>
                 <a
                   href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
                   target='_blank'
@@ -50,7 +50,7 @@ export const Skills = () => {
                   <FaJsSquare color='#f0db4f' />
                 </a>
               </span>
-              <span className='text-8xl px-2'>
+              <span className='text-5xl px-2'>
                 <a
                   href='https://reactjs.org/'
                   target='_blank'
@@ -64,7 +64,7 @@ export const Skills = () => {
               <h2 className='text-2xl'>Back End</h2>
             </span>
             <div className='flex flex-row container justify-center md:pt-3 md:pb-10'>
-              <span className='text-8xl px-2'>
+              <span className='text-5xl px-2'>
                 <a
                   href='https://expressjs.com/'
                   target='_blank'
@@ -73,7 +73,7 @@ export const Skills = () => {
                   <SiExpress color='#303030' />
                 </a>
               </span>
-              <span className='text-8xl px-2'>
+              <span className='text-5xl px-2'>
                 <a
                   href='https://nodejs.org/'
                   target='_blank'
@@ -87,7 +87,7 @@ export const Skills = () => {
               <h2 className='text-2xl'>Database</h2>
             </span>
             <div className='flex flex-row container justify-center md:pt-3 md:pb-10'>
-              <span className='text-8xl px-2'>
+              <span className='text-5xl px-2'>
                 <a
                   href='https://expressjs.com/'
                   target='_blank'
