@@ -11,7 +11,7 @@ export const Header = () => {
       <nav className='flex flex-wrap items-center justify-between py-3 sticky px-8 mb-3 top-3'>
         <div className='container mx-auto flex flex-wrap items-center justify-between'>
           <div className='w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start'>
-            <span className='text-1xl leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase'>
+            <span className='text-lg leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase'>
               <NavLink to='/'>Torben Florup Schytt-Nielsen</NavLink>
             </span>
             <button
