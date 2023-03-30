@@ -89,7 +89,7 @@ export const Skills = () => {
             <div className='flex flex-row container justify-center md:pt-3 md:pb-10'>
               <span className='text-5xl px-2'>
                 <a
-                  href='https://expressjs.com/'
+                  href='https://www.postgresql.org/'
                   target='_blank'
                   rel='noopener noreferrer'
                 >
